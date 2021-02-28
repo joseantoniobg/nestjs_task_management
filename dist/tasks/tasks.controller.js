@@ -25,14 +25,17 @@ const get_user_decorator_1 = require("../auth/get-user.decorator");
 let TasksController = class TasksController {
     constructor(tasksService) {
         this.tasksService = tasksService;
+        this.logger = new common_1.Logger('TasksController');
     }
     getTasks(user, filterDto) {
+        this.logger.verbose(`User ${user.username} retrieving all tasks. Filters: ${JSON.stringify(filterDto)}`);
         return this.tasksService.getTasks(filterDto, user);
     }
     getTaskById(user, id) {
         return this.tasksService.findTaskByid(id, user);
     }
     createTask(user, createTaskDto) {
+        this.logger.verbose(`User ${user.username} creating a new task. Data: ${JSON.stringify(createTaskDto)}`);
         return this.tasksService.createTask(createTaskDto, user);
     }
     updateTaskStatus(user, id, status) {

@@ -3487,8 +3487,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/task.repository.ts": {
-        "version": "ab06367774e4a1127bc9d1a791971c2edf532944ceae650dd672b7da088754fe",
-        "signature": "c4ff6471e42dd34271faf789609bca54b0826284cc4218fe0f3bd301309e6743",
+        "version": "41b57301d901e30cc00fbad1171e3148be2c699b39505150d7733ad1119bcaba",
+        "signature": "82bff5e51ce4a571adeb3e7a159e16d59a26be6e6aafe06e460cfd69bba83d1c",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.service.ts": {
@@ -3557,8 +3557,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "b63c8c17f0017e50ddecaac8713da3a49b3d23181c914dfdf81b2bd7dc6843d2",
-        "signature": "1253747a19086a0a3b61869060014420ba814c42d49c9bdac15635bdedc04ad8",
+        "version": "b593704976542a1f5b03eaacbb5f14d3c485f262033b9ad4bf508aa4b91d0f41",
+        "signature": "654fbb1102c289e1d276385d075a1dfcb9bd45c4515fe774828467561548f6d1",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/globals.d.ts": {
@@ -3847,8 +3847,8 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "a7bde2390fa77aeca2327dd0314d91aa7ac8d97c8adcd8ed4fb9afbb506aa25b",
-        "signature": "0e9f73a05b1b6329af17d0ea77e9c048528bcf231b97cc2110db08cf7319d6c5",
+        "version": "6e034de15ca5295d1e0fffef229e5228cfc84e9b9802cc718d2f12c44ba8b0a9",
+        "signature": "02f8c03f2bff7ad26c718c37cfc184c29eb4a793942c55556b74b375338659a7",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.controller.ts": {
@@ -4062,7 +4062,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "3c8967198a459fe0868276c735fb4ecbe75c3ed2bbda02d4dcee787c5c448528",
+        "version": "4e3766c14158562400196de61100ef458005eb347e4aac8c8f91647de861c6f8",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
@@ -7600,6 +7600,7 @@
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
       "../src/main.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts"
       ],
