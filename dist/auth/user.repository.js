@@ -8,14 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserRepository = void 0;
 const typeorm_1 = require("typeorm");
+const bcrypt = require("bcrypt");
 const user_entity_1 = require("./user.entity");
 const common_1 = require("@nestjs/common");
 let UserRepository = class UserRepository extends typeorm_1.Repository {
     async signUp(authCredentialsDto) {
         const { username, password } = authCredentialsDto;
+        const salt = await bcrypt.genSalt();
         const user = new user_entity_1.User();
         user.username = username;
-        user.password = password;
+        user.salt = salt;
+        user.password = await this.hashPassword(password, salt);
         try {
             await user.save();
         }
@@ -23,7 +26,23 @@ let UserRepository = class UserRepository extends typeorm_1.Repository {
             if (error.code === '23505') {
                 throw new common_1.ConflictException(`Username "${username}" already exists`);
             }
+            else {
+                throw new common_1.InternalServerErrorException();
+            }
         }
+    }
+    async validateUserPassword(authCredentialsDto) {
+        const { username, password } = authCredentialsDto;
+        const user = await this.findOne({ username });
+        if (user && await user.validatePassword(password)) {
+            return username;
+        }
+        else {
+            return null;
+        }
+    }
+    async hashPassword(password, salt) {
+        return await bcrypt.hash(password, salt);
     }
 };
 UserRepository = __decorate([
