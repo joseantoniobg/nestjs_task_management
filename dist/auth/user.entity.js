@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.User = void 0;
 const typeorm_1 = require("typeorm");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const task_entity_1 = require("../tasks/task.entity");
 let User = class User extends typeorm_1.BaseEntity {
     async validatePassword(password) {

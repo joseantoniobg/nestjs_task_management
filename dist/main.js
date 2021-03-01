@@ -8,6 +8,15 @@ async function bootstrap() {
     const serverConfig = config.get('server');
     const logger = new common_1.Logger('boostrap');
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
+    if (process.env.NODE_ENV === 'development') {
+        app.enableCors();
+    }
+    else {
+        app.enableCors({
+            origin: serverConfig.origin,
+        });
+        logger.log(`Accepting request from ${serverConfig.origin}`);
+    }
     const port = process.env.PORT || serverConfig.port;
     await app.listen(port);
     logger.log(`Application listening on port ${port}`);

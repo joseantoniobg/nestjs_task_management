@@ -27,6 +27,7 @@ let AuthService = class AuthService {
         return this.userRepository.signUp(authCredentialsDto);
     }
     async signIn(authCredentialsDto) {
+        this.logger.log(`user trys to sign in. User: ${authCredentialsDto.username}`);
         const username = await this.userRepository.validateUserPassword(authCredentialsDto);
         if (!username) {
             throw new common_1.UnauthorizedException('Invalid Credentials');

@@ -2842,7 +2842,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/user.entity.ts": {
-        "version": "1ae405e6e98f69207c059597c083f7449f3ff9df1fdd04b26ad10078c9eef187",
+        "version": "e03784276384f521547584c116c53b880237383ee59c28cbe0bdcd0baa030a08",
         "signature": "d2e285b855e8ad126436a554ae76d978d443ac506538cb96066a1d6b6dcc9331",
         "affectsGlobalScope": false
       },
@@ -3837,7 +3837,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/user.repository.ts": {
-        "version": "f4b652087750e8651a18bfc8a491d967e1258c7bc7bd856df24f95dfd05e2d0d",
+        "version": "12e2ba6e91ede647d3e95bed7fb249a0f38c6a7da204f9eae00fd158968e7dc6",
         "signature": "b3133b3316f5f62adb69092a6c2a25202bd863960bc7b554b487366e9f34a511",
         "affectsGlobalScope": false
       },
@@ -3847,7 +3847,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "6e034de15ca5295d1e0fffef229e5228cfc84e9b9802cc718d2f12c44ba8b0a9",
+        "version": "5e15a1b608cf168ba503e4d4def0b5430f9e6e3cc7478ec7472b94c4d6693651",
         "signature": "02f8c03f2bff7ad26c718c37cfc184c29eb4a793942c55556b74b375338659a7",
         "affectsGlobalScope": false
       },
@@ -3857,12 +3857,12 @@
         "affectsGlobalScope": false
       },
       "../src/auth/jwt.strategy.ts": {
-        "version": "404e25a82e7f1ec12bf5442f26cf1b053fef5eb61d312151eb0b465343bc669a",
+        "version": "aea5f976311fd591bc990968a127c03dbebaf37bd82f045e6ab754cd104d2236",
         "signature": "f21c469f02bcf23ab60c5d3386ebd267b8b9057d736c5a9c8fe27eab6ed2d5ca",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.module.ts": {
-        "version": "b1d3dc0d3348cda329edacdda0f8947aac5fe91c3b73cda0ba0c55a063216991",
+        "version": "915ba97d12548835453efd6923ae203b109e6f0e31e69bcb7e632c706e0a85b5",
         "signature": "2e5d258cf85349b02b015c3f1b8873c152d182c3819a7ccc3aff16fc3037a5fc",
         "affectsGlobalScope": false
       },
@@ -3872,7 +3872,7 @@
         "affectsGlobalScope": false
       },
       "../src/config/typeorm.config.ts": {
-        "version": "3be1e1fa8dc8d234cf8934e74002b5682daddbdc309add2a72e32398dff2df07",
+        "version": "a59741f89a29453683c66e7cff8d72af1e56e9b7f6d3c2726356e77977c3b763",
         "signature": "5d99aa375974e25b9e9c634b8fa1bb10ac8ed7867b187e09c1224e87357194f4",
         "affectsGlobalScope": false
       },
@@ -4062,7 +4062,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "1cc2b573f9e091a2a99a49aed1544a2ad5647e3e91e38c4937b9799682dcc3e1",
+        "version": "ea2ccf8bff4151b41c242c58fccab7cf11b3388aa591d21560f4c616048d7a53",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },

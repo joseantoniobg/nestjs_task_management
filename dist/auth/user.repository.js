@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserRepository = void 0;
 const typeorm_1 = require("typeorm");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const user_entity_1 = require("./user.entity");
 const common_1 = require("@nestjs/common");
 let UserRepository = class UserRepository extends typeorm_1.Repository {

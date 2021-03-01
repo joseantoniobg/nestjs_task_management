@@ -1,2 +1,5 @@
+server:
+  origin: https://jabg-nestjs-task-management-frontend.s3-sa-east-1.amazonaws.com
+
 db:
-  syncronize: false
+  synchronize: false

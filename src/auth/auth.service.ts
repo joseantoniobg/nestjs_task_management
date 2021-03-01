@@ -19,6 +19,7 @@ export class AuthService {
     }
 
     async signIn(authCredentialsDto: AuthCredentialsDto): Promise<{ accessToken: string }> {
+        this.logger.log(`user trys to sign in. User: ${authCredentialsDto.username}`);
         const username = await this.userRepository.validateUserPassword(authCredentialsDto);
 
         if (!username) {
