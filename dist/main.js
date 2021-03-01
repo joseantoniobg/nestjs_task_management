@@ -9,6 +9,7 @@ async function bootstrap() {
     const logger = new common_1.Logger('boostrap');
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     if (process.env.NODE_ENV === 'development') {
+        logger.debug(`Accepting request from any resource`);
         app.enableCors();
     }
     else {
